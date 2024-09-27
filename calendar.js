@@ -1,8 +1,8 @@
 const YEAR = 2024,
       CALENDAR_MONTHS = [...Array(12)].map((_, i) => `${i + 1}`),
       MONTH_ARG_INDEX = 3,
-      CALENDAR_WEEK_DAYS = ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"],
-      CALENDAR_SIDE_CHARACTER_COUNT = CALENDAR_WEEK_DAYS.join(" ").length,
+      CALENDAR_ENGLISH_WEEKDAYS = ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"],
+      CALENDAR_SIDE_CHARACTER_COUNT = CALENDAR_ENGLISH_WEEKDAYS.join(" ").length,
       SPACE_PER_ONE_DAY = "  ",
       SPACE_BETWEEN_DAY = " ";
       
@@ -57,7 +57,7 @@ const getMonthDays = () => {
 
 const putCalendarElement = () => {
   console.log(`${spaceForPuttingMonthYear + englishMonth} 2024`);
-  console.log(CALENDAR_WEEK_DAYS.join(" "));
+  console.log(CALENDAR_ENGLISH_WEEKDAYS.join(" "));
 }
 
 const putWeeks = () => {
